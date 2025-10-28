@@ -1,56 +1,139 @@
 <!doctype html>
 <html lang="it">
-<head><link rel="icon" href="logo.png" type="image/png">
+<head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>LuckyExperience – Sito Ufficiale</title>
-  <meta name="description" content="LuckyExperience: la ruota digitale che trasforma la fortuna in emozione. Premi garantiti per ospiti e futuri ospiti.">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <title>LuckyExperience – Vivi la fortuna</title>
+  <meta name="description" content="LuckyExperience: la ruota digitale che trasforma la fortuna in emozione. Premi garantiti per ospiti e strutture partner.">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --gold:#D4AF37; --bg:#000; --bg2:#111; --text:#ddd; --white:#fff;
+      --gold:#D4AF37;
+      --bg:#000;
+      --bg2:#111;
+      --text:#ddd;
+      --white:#fff;
     }
-    * { box-sizing:border-box; }
-    body { margin:0; font-family:'Poppins',sans-serif; background:var(--bg); color:var(--text); line-height:1.8; }
-    a { color:var(--gold); text-decoration:none; }
-    a:hover { text-decoration:underline; }
-    .wrap { max-width:1000px; margin:0 auto; padding:40px 20px; text-align:center; }
-    header img { width:120px; height:auto; margin:6px 0 14px; }
-    h1 { color:var(--white); font-size:32px; margin:8px 0; }
-    p.lead { max-width:760px; margin:8px auto 18px; }
-    .cta-row { display:flex; gap:16px; justify-content:center; flex-wrap:wrap; margin:24px 0 10px; }
+    body {
+      margin:0;
+      font-family:'Poppins',sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.8;
+    }
+    a {
+      color:var(--gold);
+      text-decoration:none;
+    }
+    a:hover {
+      text-decoration:underline;
+    }
+    .wrap {
+      max-width:1000px;
+      margin:0 auto;
+      padding:40px 20px;
+      text-align:center;
+    }
+    header img {
+      width:120px;
+      margin:6px 0 14px;
+    }
+    h1 {
+      color:var(--white);
+      font-size:32px;
+      margin:8px 0;
+    }
+    h2 {
+      color:var(--white);
+      margin-top:25px;
+    }
+    p.lead {
+      max-width:760px;
+      margin:8px auto 18px;
+    }
+    .cta-row {
+      display:flex;
+      gap:16px;
+      justify-content:center;
+      flex-wrap:wrap;
+      margin:24px 0 10px;
+    }
     .btn {
-      display:inline-block; background:var(--gold); color:#000; font-weight:700;
-      padding:14px 22px; border-radius:40px; box-shadow:0 0 18px rgba(212,175,55,.45);
-      transition:transform .2s ease; border:0; font-size:16px;
+      display:inline-block;
+      background:var(--gold);
+      color:#000;
+      font-weight:700;
+      padding:14px 22px;
+      border-radius:40px;
+      box-shadow:0 0 18px rgba(212,175,55,.45);
+      transition:transform .2s ease;
+      border:0;
+      font-size:16px;
     }
-    .btn:hover { transform:scale(1.04); }
-    .card-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:18px; margin:28px 0; }
+    .btn:hover { transform:scale(1.05); }
+    .card-grid {
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:18px;
+      margin:28px 0;
+    }
     .card {
       background:linear-gradient(180deg,var(--bg2),var(--bg));
-      border:1px solid rgba(212,175,55,.35); border-radius:16px; padding:18px 16px; text-align:left;
+      border:1px solid rgba(212,175,55,.35);
+      border-radius:16px;
+      padding:18px 16px;
+      text-align:left;
       box-shadow:0 0 18px rgba(212,175,55,.2);
     }
-    .card h3 { color:var(--white); margin:6px 0 6px; font-size:18px; }
+    .card h3 {
+      color:var(--white);
+      margin:6px 0;
+      font-size:18px;
+    }
     .card p { margin:0; font-size:14px; }
-    .divider { height:1px; background:rgba(212,175,55,.25); margin:26px auto; max-width:760px; }
-    footer { font-size:12px; color:#aaa; margin-top:24px; }
-    .lang { font-size:13px; color:#aaa; margin-top:12px; }
-    .list { list-style:none; padding:0; margin:12px auto; max-width:620px; text-align:left; }
-    .list li { padding:8px 12px; border:1px solid rgba(212,175,55,.25); border-radius:12px; margin:8px 0; background:rgba(212,175,55,.07); }
+    .divider {
+      height:1px;
+      background:rgba(212,175,55,.25);
+      margin:26px auto;
+      max-width:760px;
+    }
+    footer {
+      font-size:12px;
+      color:#aaa;
+      margin-top:24px;
+    }
+    .lang {
+      font-size:13px;
+      color:#aaa;
+      margin-top:12px;
+    }
+    .list {
+      list-style:none;
+      padding:0;
+      margin:12px auto;
+      max-width:620px;
+      text-align:left;
+    }
+    .list li {
+      padding:8px 12px;
+      border:1px solid rgba(212,175,55,.25);
+      border-radius:12px;
+      margin:8px 0;
+      background:rgba(212,175,55,.07);
+    }
   </style>
 </head>
+
 <body>
   <div class="wrap">
     <header>
       <img src="https://cdn.shopify.com/s/files/1/0972/5398/2543/files/logo_ritagliato.png?v=1761577845" alt="LuckyExperience">
-      <h1>🎯 LuckyExperience</h1>
-      <p class="lead">La ruota digitale che trasforma la fortuna in emozione. Un progetto indipendente creato per regalare
-        <strong>premi e vantaggi garantiti</strong> agli ospiti e a chi vuole tornare a trovarci.</p>
+      <h1>🎯 LuckyExperience – Vivi la fortuna</h1>
+      <p class="lead">La ruota digitale che trasforma la fortuna in emozione.  
+        Un progetto nato per regalare <strong>premi, vantaggi e sorrisi</strong> agli ospiti e alle strutture partner.</p>
       <div class="cta-row">
-        <a class="btn" href="https://luckyexperience00.github.io/luckyexperience/">🎡 Ruota Originale</a>
-        <a class="btn" href="https://luckyexperience00.github.io/luckyexperience-instay/">🏨 Ruota InStay (durante il soggiorno)</a>
+        <a class="btn" href="https://luckyexperience00.github.io/luckyexperience/">🎡 Gira la Ruota Originale</a>
+        <a class="btn" href="partner.html">🏨 Scopri la Ruota Partner</a>
       </div>
       <div class="lang">EN: <a href="#en">scroll for English ↓</a></div>
     </header>
@@ -58,60 +141,48 @@
     <div class="divider"></div>
 
     <section>
-      <h2 style="color:#fff;margin:6px 0 6px;">Cos'è LuckyExperience</h2>
-      <p>È un’esperienza digitale pensata per rafforzare il rapporto tra ospiti e struttura con un tocco di sorpresa:
-        <strong>ogni partecipante vince sempre qualcosa</strong>. Pagamento sicuro PayPal, premi trasparenti.</p>
+      <h2>✨ Cos’è LuckyExperience</h2>
+      <p>È un progetto indipendente creato per rendere ogni soggiorno o prenotazione <strong>un’esperienza unica</strong>.  
+      Con LuckyExperience puoi vincere sempre un premio, uno sconto o un vantaggio reale.  
+      Ogni ruota è diversa, ma la fortuna è garantita.</p>
 
-      <div class="card-grid">
-        <div class="card">
-          <h3>🌀 Ruota Originale</h3>
-          <p>Per chi non è ancora in struttura o vuole tornare. Premi: sconti su pernottamenti e soste, fino a soggiorni top.</p>
-        </div>
-        <div class="card">
-          <h3>🏨 Ruota InStay</h3>
-          <p>Per chi è già ospite. Premi immediati coerenti col soggiorno: aperitivo, colazione, late check-out, vino, prosecco, <strong>20% sconto</strong> su prenotazione futura.</p>
-        </div>
-        <div class="card">
-          <h3>🔒 Chiaro & Trasparente</h3>
-          <p>Iniziativa indipendente in collaborazione con strutture partner. Non è gioco d’azzardo (D.P.R. 430/2001). Email: <a href="mailto:luckyexperienceinfoexperience@gmail.com">luckyexperienceinfoexperience@gmail.com</a></p>
-        </div>
-      </div>
-
-      <h3 style="color:#fff;margin:14px 0 6px;">Esempi di premi</h3>
+      <h2>🎁 Premi della Ruota Originale</h2>
       <ul class="list">
-        <li>🍹 Aperitivo di benvenuto</li>
-        <li>🥂 Prosecco Big + Stuzzicheria</li>
-        <li>🍷 Bottiglia di Vino (rosso/bianco)</li>
-        <li>☕ Colazione convenzionata</li>
-        <li>🕒 Late check-out +1h</li>
-        <li>🎫 20% sconto su prenotazione futura</li>
+        <li>🏆 1 notte in <strong>Suite con Jacuzzi e percorso SPA</strong></li>
+        <li>🌙 1 notte in <strong>Camera Standard con aperitivo incluso</strong></li>
+        <li>💆‍♀️ 25%, 20% o 15% di sconto su <strong>1 notte + 60 min SPA</strong></li>
+        <li>💎 20% o 15% di sconto su <strong>1 notte in Suite</strong></li>
+        <li>🕒 10%, 15% o 20% di sconto su <strong>sosta 3h</strong> in qualsiasi camera</li>
+        <li>🎫 10% di sconto su <strong>una notte in qualsiasi camera</strong></li>
       </ul>
+
+      <p>Ogni partecipante ottiene sempre un premio garantito — perché con LuckyExperience, <strong>la fortuna è nell’esperienza</strong>.</p>
     </section>
 
     <div class="divider" id="en"></div>
 
     <section>
-      <h2 style="color:#fff;margin:6px 0 6px;">What is LuckyExperience</h2>
-      <p>A digital experience that adds surprise and value to your stay: <strong>every participant always wins</strong>. Secure PayPal payment, clear prizes.</p>
+      <h2>✨ What is LuckyExperience</h2>
+      <p>LuckyExperience is a digital project that turns every stay or booking into something special.  
+      Spin the wheel and win guaranteed prizes, discounts or unique experiences.  
+      Each wheel is different, but the thrill is always real.</p>
 
-      <div class="card-grid">
-        <div class="card">
-          <h3>🌀 Original Wheel</h3>
-          <p>For future guests or those who want to return. Prizes include stay/stopover discounts up to top stays.</p>
-        </div>
-        <div class="card">
-          <h3>🏨 InStay Wheel</h3>
-          <p>For current in-house guests. Immediate perks: welcome drink, breakfast, late check-out, wine, prosecco, and <strong>20% off</strong> a future booking.</p>
-        </div>
-        <div class="card">
-          <h3>🔒 Clear & Compliant</h3>
-          <p>Independent initiative with partner properties. Not gambling (Italian D.P.R. 430/2001). Email: <a href="mailto:luckyexperienceinfoexperience@gmail.com">luckyexperienceinfoexperience@gmail.com</a></p>
-        </div>
-      </div>
+      <h2>🎁 Original Wheel Prizes</h2>
+      <ul class="list">
+        <li>🏆 1 night in <strong>Suite with Jacuzzi and SPA access</strong></li>
+        <li>🌙 1 night in <strong>Standard room with welcome aperitif</strong></li>
+        <li>💆‍♀️ 25%, 20% or 15% discount on <strong>1 night + 60 min SPA</strong></li>
+        <li>💎 20% or 15% discount on <strong>1 night in Suite</strong></li>
+        <li>🕒 10%, 15% or 20% discount on <strong>3h stay</strong> in any room</li>
+        <li>🎫 10% discount on <strong>1 night in any room</strong></li>
+      </ul>
     </section>
+
+    <div class="divider"></div>
 
     <footer>
       <p>LuckyExperience © 2025 – Tutti i diritti riservati • Servizio indipendente in collaborazione con strutture partner.</p>
+      <p>📧 <a href="mailto:luckyexperienceinfoexperience@gmail.com">luckyexperienceinfoexperience@gmail.com</a></p>
     </footer>
   </div>
 </body>
