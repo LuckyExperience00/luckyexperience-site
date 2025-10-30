@@ -36,8 +36,35 @@
     }
     .structure {
       color: #fff;
-      margin: 10px 0;
+      margin: 14px 0;
       font-size: 16px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,215,0,0.25);
+      border-radius: 10px;
+      padding: 14px;
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+      box-shadow: 0 0 10px rgba(255,215,0,0.15);
+    }
+    .services {
+      font-size: 15px;
+      margin-top: 4px;
+      color: #FFD700;
+    }
+    .address {
+      color: #bbb;
+      font-size: 13px;
+    }
+    .legend {
+      background: rgba(255,215,0,0.08);
+      border: 1px solid rgba(255,215,0,0.3);
+      padding: 10px;
+      border-radius: 10px;
+      max-width: 600px;
+      margin: 20px auto 30px;
+      font-size: 14px;
+      color: #FFD700;
     }
     a {
       color: #FFD700;
@@ -45,6 +72,11 @@
     }
     a:hover {
       text-decoration: underline;
+    }
+    footer {
+      margin-top: 50px;
+      font-size: 13px;
+      color: #888;
     }
   </style>
 </head>
@@ -54,39 +86,52 @@
   
   <h1>🌍 Le Strutture Partner LuckyExperience</h1>
   <p>Scopri tutte le strutture che hanno scelto di offrire ai propri ospiti un'esperienza unica con LuckyExperience.  
-  Ogni struttura partner integra la nostra Ruota LuckyExperience per rendere il soggiorno ancora più speciale.</p>
+  Ogni partner integra la Ruota LuckyExperience per rendere il soggiorno ancora più speciale e premiante.</p>
+
+  <div class="legend">
+    <strong>Legenda servizi:</strong><br>
+    🛏️ Pernottamento • ⏱️ Sosta 3h • 💆‍♀️ SPA • 💦 Jacuzzi • ☕ Colazione • 🅿️ Parcheggio
+  </div>
 
   <!-- Napoli -->
   <div class="region">
-    <h2>Napoli</h2>
+    <h2>📍 Napoli</h2>
     <div class="structure">
       🏨 <strong>Guest House Partenope</strong><br>
-      📍 Corso Arnaldo Lucci, 96 – Napoli<br>
+      <span class="services">Servizi: 🛏️ ⏱️ 💦 🅿️ ☕</span><br>
+      <span class="address">📍 Corso Arnaldo Lucci, 96 – Napoli</span><br>
       🌐 <a href="https://guesthousepartenope.it" target="_blank">guesthousepartenope.it</a>
+    </div>
+
+    <div class="structure">
+      🏨 <strong>Royalty Rooms & SPA</strong><br>
+      <span class="services">Servizi: 🛏️ ⏱️ 💆‍♀️ 💦 ☕</span><br>
+      <span class="address">📍 Via Toledo, 210 – Napoli</span><br>
+      🌐 <a href="#" target="_blank">royaltyrooms.it</a>
     </div>
   </div>
 
   <!-- Roma -->
   <div class="region">
-    <h2>Roma</h2>
+    <h2>📍 Roma</h2>
     <div class="structure">(Prossimamente)</div>
   </div>
 
   <!-- Milano -->
   <div class="region">
-    <h2>Milano</h2>
+    <h2>📍 Milano</h2>
     <div class="structure">(Prossimamente)</div>
   </div>
 
   <!-- Torino -->
   <div class="region">
-    <h2>Torino</h2>
+    <h2>📍 Torino</h2>
     <div class="structure">(Prossimamente)</div>
   </div>
 
-  <p style="margin-top:50px;font-size:13px;color:#888;">
+  <footer>
     LuckyExperience © 2025 – Tutti i diritti riservati<br>
     📧 <a href="mailto:luckyexperienceinfoexperience@gmail.com">luckyexperienceinfoexperience@gmail.com</a>
-  </p>
+  </footer>
 </body>
 </html>
